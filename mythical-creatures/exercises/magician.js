@@ -27,7 +27,7 @@ class Magician {
       return `Oh no, this trick is not ready!`;
     }
   }
-  
+
 };
 
 
