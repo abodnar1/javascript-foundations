@@ -10,10 +10,8 @@ class Human {
       return true;
     } else {
       return false;
-    }
+    };
   };
-
-
 
 };
 

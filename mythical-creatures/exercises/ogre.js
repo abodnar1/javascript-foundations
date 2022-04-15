@@ -6,7 +6,7 @@ class Ogre {
     // called a terinary expression
     // this.home = ogre.abode || "swamp"; (how I would write it now)
     this.swings = 0;
-  }
+  };
 
   encounter(human) {
     human.encounterCounter ++;
@@ -14,7 +14,6 @@ class Ogre {
       this.swingAt();
       human.knockedOut = true;
     };
-
   };
 
   swingAt(human) {
