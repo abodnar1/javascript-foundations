@@ -56,6 +56,7 @@ describe("Roadrace", function() {
 
     race.registerParticipants(mike);
     race.registerParticipants(pam);
+
     assert.equal(race.participants.length, 2);
 
     race.completeRace();
