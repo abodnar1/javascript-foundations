@@ -19,6 +19,7 @@ describe('Golf Course', function () {
   it('should have some unique features', function () {
     var golfCourse1 = new GolfCourse('Arrowhead', 'hard', 42, ['great views', 'wildlife']);
     var golfCourse2 = new GolfCourse('Bay Hill', 'hard', 11, ['water', 'Arnies Place']);
+
     assert.deepEqual(golfCourse1.features, ['great views', 'wildlife']);
     assert.deepEqual(golfCourse2.features, ['water', 'Arnies Place']);
   });
@@ -44,6 +45,7 @@ describe('Golf Course', function () {
 
     golfCourse.checkInGroup(group2);
     assert.equal(golfCourse.openings, 3);
+    console.log(golfCourse)
     assert.deepEqual(golfCourse.currentlyPlaying, ['Bridget', 'Joanna', 'Kevin', 'Ted', 'Pat']);
   });
 
@@ -59,6 +61,7 @@ describe('Golf Course', function () {
     var group2 = [golfer4, golfer5];
 
     var successfulCheckIn = golfCourse.checkInGroup(group1);
+    console.log(golfCourse)
     assert.equal(golfCourse.openings, 1);
     assert.deepEqual(golfCourse.currentlyPlaying, ['Kevin', 'Ted', 'Pat']);
     assert.equal(successfulCheckIn, 'You\'re checked in. Have fun!')
